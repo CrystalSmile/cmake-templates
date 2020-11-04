@@ -1,5 +1,8 @@
 build/
-CMakeFiles
-*.cmake
+
+CMakeFiles/
 CMakeCache.txt
 Test_Exe
+
+*.a
+*.cmake
