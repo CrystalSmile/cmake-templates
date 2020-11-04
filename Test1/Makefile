@@ -140,6 +140,33 @@ Test_Exe/fast:
 	$(MAKE) -f CMakeFiles/Test_Exe.dir/build.make CMakeFiles/Test_Exe.dir/build
 .PHONY : Test_Exe/fast
 
+Calc.o: Calc.cc.o
+
+.PHONY : Calc.o
+
+# target to build an object file
+Calc.cc.o:
+	$(MAKE) -f CMakeFiles/Test_Exe.dir/build.make CMakeFiles/Test_Exe.dir/Calc.cc.o
+.PHONY : Calc.cc.o
+
+Calc.i: Calc.cc.i
+
+.PHONY : Calc.i
+
+# target to preprocess a source file
+Calc.cc.i:
+	$(MAKE) -f CMakeFiles/Test_Exe.dir/build.make CMakeFiles/Test_Exe.dir/Calc.cc.i
+.PHONY : Calc.cc.i
+
+Calc.s: Calc.cc.s
+
+.PHONY : Calc.s
+
+# target to generate assembly for a file
+Calc.cc.s:
+	$(MAKE) -f CMakeFiles/Test_Exe.dir/build.make CMakeFiles/Test_Exe.dir/Calc.cc.s
+.PHONY : Calc.cc.s
+
 main.o: main.cc.o
 
 .PHONY : main.o
@@ -176,6 +203,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Test_Exe"
+	@echo "... Calc.o"
+	@echo "... Calc.i"
+	@echo "... Calc.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
